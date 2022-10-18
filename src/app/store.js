@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import epifanyReducer from '../features/epifanies/epifanySlice'
+import userReducer from '../features/users/userSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    epifanies: epifanyReducer,
+    users: userReducer
   },
 });
